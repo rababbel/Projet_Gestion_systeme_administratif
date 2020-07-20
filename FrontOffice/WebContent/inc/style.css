@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+/* Général ------------------------------------------------------------------------------------ */ 
+body, p, legend, label, input {    font: normal 8pt verdana, helvetica, sans-serif; }
+.nav{background-color:white;height:100px} 
+
+/* Forms -------------------------------------------------------------------------------------- */ 
+fieldset {    padding: 20px;    border: 1px rgb(233,76,161) solid; margin: 10px;}
+ legend {    font-weight: bold;    color: #0568CD; }
+ form label {    float: left;    width: 200px;    margin: 3px 0px 0px 0px; } 
+ form input {    margin: 3px 3px 0px 0px;    border: 1px #999 solid; } 
+ form input.sansLabel {    margin-left: 200px; } 
+ /* Styles et couleurs ------------------------------------------------------------------------- */
+  .requis {    color: #c00; } 
+  .erreur {    color: #900; } 
+  .succes {    color: #090; } 
+  .info {    font-style: italic;    color: #E8A22B; }
+  .etape{color :red}
+  .accuiel{text-align:center; color:white; font-weight: bold;  padding: 30px;font-size:20px; }
+ .form{ 
+    position: absolute;
+    z-index: 3;
+    background-color: #fff;
+    left: 40%;
+    top: 40%;
+    transform: translate(-30%,-30%);
+    width: 400px;
+    padding: 30px;
+   
+    font-family: 'Open Sans', sans-serif;
+    }
+    body{
+    position: relative;
+    height:80vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(../img/aa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.position{
+    position: absolute;
+    z-index: 3;
+    left: 40%;
+    top: 40%;
+    width:200px;
+   background-color:white;
+}
+    input[type="submit"]{ 
+    margin: 12px 0;
+    padding: 8px 0;
+    border:none;
+    background: rgba(233,76,161,1);
+     color: #fff;
+    transition: all .4s;
+    border-radius: 50px;
+    
+}
+button{
+	text-transform: uppercase;
+    margin: 12px 0;
+    padding: 8px 0;
+    width: 100%;
+    border:none;
+    background: rgba(233,76,161,1);
+     color: #fff;
+    transition: all .4s;
+    border-radius: 50px;
+}
+.footer{
+	position:relative;
+	top:100%;
+    background-color: rgba(200,200,200,.3);
+}
+.headerEmploye{
+	background-color: rgba(200,300,200,.4);
+	font-size:20px;
+}
+.title{
+
+    padding: 15px 0;
+    margin-left: 10px;
+    
+}
+.encadrement{
+	 position: absolute;
+    z-index: 3;
+        left: 50%;
+    top: 5%;
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JAVA_PROJET_FRONT</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet> 
+     <servlet-name>demande</servlet-name> 
+     <servlet-class>ma.servlet.demande</servlet-class> 
+    </servlet> 
+    <servlet-mapping> 
+      <servlet-name>demande</servlet-name> 
+      <url-pattern>/deposer</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>DepoAffichage</servlet-name>
+     <servlet-class>ma.servlet.DepoAffichage</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>DepoAffichage</servlet-name> 
+      <url-pattern>/afficherDepo</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>connexionCitoyen</servlet-name>
+     <servlet-class>ma.servlet.connexionCitoyen</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>connexionCitoyen</servlet-name> 
+      <url-pattern>/connexion</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>connexionCitoyenVerification</servlet-name>
+     <servlet-class>ma.servlet.connexionCitoyenVerification</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>connexionCitoyenVerification</servlet-name> 
+      <url-pattern>/connexionVerification</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     <servlet-name>AccepterDemande</servlet-name>
+     <servlet-class>ma.servlet.AccepterDemande</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>AccepterDemande</servlet-name> 
+      <url-pattern>/acceptation</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>SuivreDemandeCitoyen</servlet-name>
+     <servlet-class>ma.servlet.SuivreDemandeCitoyen</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>SuivreDemandeCitoyen</servlet-name> 
+      <url-pattern>/suiviCitoyen</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>VerificationJeton</servlet-name>
+     <servlet-class>ma.servlet.VerificationJeton</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>VerificationJeton</servlet-name> 
+      <url-pattern>/verificationJeton</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>ConnexionEmploye</servlet-name>
+     <servlet-class>ma.servlet.ConnexionEmploye</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>ConnexionEmploye</servlet-name> 
+      <url-pattern>/connexionEmpl</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>GestionEtape</servlet-name>
+     <servlet-class>ma.servlet.GestionEtape</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>GestionEtape</servlet-name> 
+      <url-pattern>/gestionEtape</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>GestionEtapeEmploye</servlet-name>
+     <servlet-class>ma.servlet.GestionEtapeEmploye</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>GestionEtapeEmploye</servlet-name> 
+      <url-pattern>/gestionEtapeEmploye</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     <servlet-name>Decision</servlet-name>
+     <servlet-class>ma.servlet.Decision</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>Decision</servlet-name> 
+      <url-pattern>/decision</url-pattern>
+     </servlet-mapping>
+
+     
+      <servlet>
+     <servlet-name>GestionEtapeDecision</servlet-name>
+     <servlet-class>ma.servlet.GestionEtapeDecision</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>GestionEtapeDecision</servlet-name> 
+      <url-pattern>/decisionEtape</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     <servlet-name>ConsulterDemande</servlet-name>
+     <servlet-class>ma.servlet.ConsulterDemande</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>ConsulterDemande</servlet-name> 
+      <url-pattern>/consulterDemande</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     <servlet-name>ArchiverDemande</servlet-name>
+     <servlet-class>ma.servlet.ArchiverDemande</servlet-class> 
+     </servlet>
+     <servlet-mapping>
+      <servlet-name>ArchiverDemande</servlet-name> 
+      <url-pattern>/archiverDemande</url-pattern>
+     </servlet-mapping>
+     
+</web-app>
